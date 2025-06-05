@@ -1,9 +1,7 @@
 {
-  "tag": "alpha",
-  "initialVersions": {
-    "@beacon-oss/types": "0.1.0-alpha.11"
-  },
-  "changesets": [
-    "pink-planets-shake"
-  ]
+    "tag": "alpha",
+    "initialVersions": {
+        "@beacon-oss/types": "0.1.0-alpha.11"
+    },
+    "changesets": []
 }
