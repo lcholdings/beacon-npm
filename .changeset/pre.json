@@ -1,7 +1,10 @@
 {
-    "tag": "alpha",
-    "initialVersions": {
-        "@beacon-oss/types": "0.1.0-alpha.9"
-    },
-    "changesets": []
+  "tag": "alpha",
+  "initialVersions": {
+    "@beacon-oss/types": "0.1.0-alpha.9"
+  },
+  "changesets": [
+    "six-apples-leave",
+    "wet-pens-drop"
+  ]
 }
