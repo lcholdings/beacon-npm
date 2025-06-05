@@ -5,11 +5,11 @@
 
 <div align="center">
 
-[Changelog](https://github.com/lcholdings/javascript/blob/main/CHANGELOG.md)
+[Changelog](https://github.com/lcholdings/beacon-npm/blob/main/packages/types/CHANGELOG.md)
 ·
-[Request a Feature](https://github.com/lcholdings/beacon-types/issues/new?assignees=lazylllama&labels=feature+request&title=Feature+Request:+&type=feature)
+[Request a Feature](https://github.com/lcholdings/beacon-npm/issues/new?assignees=lazylllama&labels=feature+request&title=Feature+Request+Types:+&type=feature)
 ·
-[Get help](https://github.com/lcholdings/beacon-types/issues)
+[Get help](https://github.com/lcholdings/beacon-npm/issues)
 
 </div>
 
@@ -59,7 +59,7 @@ You can get in touch with us in any of the following ways:
 
 This project is licensed under the **MIT license**.
 
-See [LICENSE](https://github.com/clerk/javascript/blob/main/packages/types/LICENSE) for more information.
+See [LICENSE](https://github.com/lcholdings/beacon-npm/blob/main/packages/types/LICENSE) for more information.
 
 ## Thanks
 
