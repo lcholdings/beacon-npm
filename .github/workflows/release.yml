@@ -58,7 +58,7 @@ jobs:
 
       - name: Create Release PR
         id: changesets
-        uses: changesets/action@main
+        uses: changesets/action@v1
         with:
           commit: 'ci(repo): Version packages'
           title: 'ci(repo): Version packages'
