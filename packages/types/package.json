@@ -9,11 +9,11 @@
         "lcholdings"
     ],
     "bugs": {
-        "url": "https://github.com/lcholdings/beacon-types/issues"
+        "url": "https://github.com/lcholdings/beacon-npm/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lcholdings/beacon-types.git"
+        "url": "git+https://github.com/lcholdings/beacon-npm.git"
     },
     "license": "MIT",
     "author": "LCHoldings",
