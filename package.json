@@ -7,9 +7,9 @@
     "build": "turbo build",
     "build:declarations": "turbo build:declarations --filter=@beacon-oss/types",
     "changeset": "changeset",
-    "changeset:empty": "changeset empty",
     "clean": "turbo clean",
     "release": "changeset publish && git push --follow-tags",
+    "version-packages": "changeset version && pnpm install --lockfile-only --engine-strict=false",
     "yalc:all": "for d in packages/*/; do echo $d; cd $d; pnpm yalc push --replace --sig; cd '../../'; done"
   },
   "repository": {

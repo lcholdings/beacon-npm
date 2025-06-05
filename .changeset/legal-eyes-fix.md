@@ -2,4 +2,4 @@
 "@beacon-oss/types": patch
 ---
 
-Reset changesets again
+trying new way to fix changesets

@@ -63,11 +63,16 @@ jobs:
           commit: 'ci(repo): Version packages'
           title: 'ci(repo): Version packages'
           publish: pnpm release
+          version: pnpm version-packages
+          createGithubReleases: true
+          setupGitUser: true
+          commitMode: git-cli
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+          FORCE_COLOR: 1
 
       - name: Discord Notification
         id: notification
