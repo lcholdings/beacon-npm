@@ -79,30 +79,3 @@ jobs:
           args: "🎉 A new release has been published! Check out the latest changes in the releases tab 🚀"
         env:
           DISCORD_WEBHOOK : ${{ secrets.CHANGESETS_DISCORD_WEBHOOK }}
-
-  # We're running the CI workflow (where node v20 modules are cached) in
-  # merge_group and not on main, we need to explicitly cache node_modules here so
-  # that follow-on branches can use the cached version of node_modules rather
-  # than recreating them every time.
-  cache-for-alternate-node-versions:
-    name: Cache for Alternate Node Versions
-    runs-on: 'ubuntu-latest'
-    timeout-minutes: 10
-    continue-on-error: true
-
-    strategy:
-      matrix:
-        version: [22]
-
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-        with:
-          show-progress: false
-
-      - name: Cache node_modules (Node v${{ matrix.version }})
-        uses: ./.github/actions/init
-        with:
-          node-version: ${{ matrix.version }}
-          turbo-team: ''
-          turbo-token: ''
