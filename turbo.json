@@ -1,0 +1,41 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "tasks": {
+        "build": {
+            "dependsOn": [
+                "^build"
+            ],
+            "inputs": [
+                "*.d.ts",
+                "src/**",
+                "tsconfig.json",
+                "tsconfig.build.json",
+                "tsconfig.declarations.json",
+                "tsup.config.ts",
+                "!dist/**",
+                "!node_modules/**",
+                "!CHANGELOG.md"
+            ],
+            "outputs": [
+                "dist/**",
+                "*/package.json",
+                "scripts/**"
+            ]
+        },
+        "build:declarations": {
+            "dependsOn": [
+                "build"
+            ],
+            "inputs": [
+                "tsconfig.declarations.json"
+            ],
+            "outputs": [
+                "dist/**/*.d.ts",
+                "dist/**/*.d.ts.map"
+            ]
+        },
+        "clean": {
+            "cache": false
+        }
+    }
+}
