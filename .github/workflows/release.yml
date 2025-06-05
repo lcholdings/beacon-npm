@@ -58,15 +58,13 @@ jobs:
 
       - name: Create Release PR
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@main
         with:
           commit: 'ci(repo): Version packages'
           title: 'ci(repo): Version packages'
           publish: pnpm release
           version: pnpm version-packages
           createGithubReleases: true
-          setupGitUser: true
-          commitMode: git-cli
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

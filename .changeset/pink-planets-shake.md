@@ -2,4 +2,4 @@
 "@beacon-oss/types": patch
 ---
 
-testing
+test
