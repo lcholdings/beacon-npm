@@ -1,7 +1,9 @@
 {
-    "tag": "alpha",
-    "initialVersions": {
-        "@beacon-oss/types": "0.1.0-alpha.11"
-    },
-    "changesets": []
+  "tag": "alpha",
+  "initialVersions": {
+    "@beacon-oss/types": "0.1.0-alpha.11"
+  },
+  "changesets": [
+    "legal-eyes-fix"
+  ]
 }
