@@ -40,5 +40,5 @@ export interface ServerSocket {
         enforceGameBuild: string;
         pureLevel: string;
     }
-    players: Array<Player>;
+    players: Array<SocketPlayer>;
 }
