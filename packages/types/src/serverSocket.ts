@@ -3,14 +3,14 @@ import type { PlayerIdentifiers } from "./playerIdentifiers";
 export interface ServerSocket {
     totalPlayers: number
     maxPlayers: number;
-    locale: string;
+    locale?: string;
     serverDescription: string;
     serverName: string;
     tags: string;
     serverInformation: {
         status: "online" | "offline"
         artifactVersion: string;
-        artifactOs: "windows" | "linux";
+        artifactOs: "windows" | "linux" | "unknown";
         resourceCount: number;
         txAdminVersion: string
         onesyncEnabled: string;
