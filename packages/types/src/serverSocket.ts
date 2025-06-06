@@ -1,5 +1,28 @@
 import type { PlayerIdentifiers } from "./playerIdentifiers";
 
+export interface SocketPlayer {
+    id: string;
+    identifiers: PlayerIdentifiers;
+    name: string;
+    characterName?: string;
+    isStaff: boolean;
+    isInVehicle: boolean;
+    mugshot?: string;
+    job: {
+        name: string;
+        grade: string | number;
+    }
+    position: {
+        x: number;
+        y: number;
+        z: number;
+    };
+    vehicle?: {
+        model: string;
+        plate: string;
+    };
+}
+
 export interface ServerSocket {
     totalPlayers: number
     maxPlayers: number;
@@ -17,26 +40,5 @@ export interface ServerSocket {
         enforceGameBuild: string;
         pureLevel: string;
     }
-    players: Array<{
-        id: string;
-        identifiers: PlayerIdentifiers;
-        name: string;
-        characterName?: string;
-        isStaff: boolean;
-        isInVehicle: boolean;
-        mugshot?: string;
-        job: {
-            name: string;
-            grade: string | number;
-        }
-        position: {
-            x: number;
-            y: number;
-            z: number;
-        };
-        vehicle?: {
-            model: string;
-            plate: string;
-        };
-    }>;
+    players: Array<Player>;
 }
