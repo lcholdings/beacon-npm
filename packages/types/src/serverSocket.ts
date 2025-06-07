@@ -27,9 +27,9 @@ export interface SocketPlayer {
     isStaff: boolean;
     isInVehicle: boolean;
     mugshot?: string;
-    job: {
-        name: string;
-        grade: string | number;
+    job?: {
+        name?: string;
+        grade?: string | number;
     }
     position: {
         x: number;
