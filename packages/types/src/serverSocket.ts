@@ -1,5 +1,24 @@
 import type { PlayerIdentifiers } from "./playerIdentifiers";
 
+export interface SocketData {
+    totalPlayers: number
+    maxPlayers: number;
+    locale?: string;
+    serverDescription: string;
+    serverName: string;
+    tags: string;
+    serverInformation: {
+        status: "online" | "offline"
+        artifactVersion: string;
+        artifactOs: "windows" | "linux" | "unknown";
+        resourceCount: number;
+        txAdminVersion: string
+        onesyncEnabled: string;
+        enforceGameBuild: string;
+        pureLevel: string;
+    }
+}
+
 export interface SocketPlayer {
     id: string;
     identifiers: PlayerIdentifiers;
@@ -23,22 +42,6 @@ export interface SocketPlayer {
     };
 }
 
-export interface ServerSocket {
-    totalPlayers: number
-    maxPlayers: number;
-    locale?: string;
-    serverDescription: string;
-    serverName: string;
-    tags: string;
-    serverInformation: {
-        status: "online" | "offline"
-        artifactVersion: string;
-        artifactOs: "windows" | "linux" | "unknown";
-        resourceCount: number;
-        txAdminVersion: string
-        onesyncEnabled: string;
-        enforceGameBuild: string;
-        pureLevel: string;
-    }
+export interface ServerSocket extends SocketData {
     players: Array<SocketPlayer>;
 }
