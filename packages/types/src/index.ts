@@ -1,3 +1,9 @@
-export * from "./serverSocket";
-export * from "./staffEvents";
-export * from "./playerIdentifiers";
+// types
+export * from "./types/serverSocket";
+export * from "./types/staffEvents";
+export * from "./types/playerIdentifiers";
+
+// Zod Schemas
+export * from "./schemas/serverSocket";
+export * from "./schemas/playerIdentifiers";
+export * from "./schemas/staffEvents";

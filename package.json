@@ -23,13 +23,13 @@
     "Lazyllama <me@lazyllama.xyz> (https://github.com/Lazylllama)"
   ],
   "devDependencies": {
-    "@types/node": "^22.14.1",
-    "typescript": "^5.8.3",
     "@changesets/cli": "^2.29.4",
     "@changesets/get-github-info": "^0.6.0",
+    "@types/node": "^22.14.1",
     "rimraf": "6.0.1",
+    "tsup": "catalog:repo",
     "turbo": "^2.5.3",
-    "tsup": "catalog:repo"
+    "typescript": "^5.8.3"
   },
   "keywords": [],
   "author": "LCHoldings",
