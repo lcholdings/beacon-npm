@@ -10,5 +10,5 @@ export interface PlayerIdentifiers {
     xboxId?: string;
 
     // Optional, for ban evasion primarily.
-    ipAdresses?: string[];
+    ipAddresses?: string[];
 }
