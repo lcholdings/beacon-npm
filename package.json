@@ -20,7 +20,8 @@
     "packages/*"
   ],
   "contributors": [
-    "Lazyllama <me@lazyllama.xyz> (https://github.com/Lazylllama)"
+    "Lazyllama <me@lazyllama.xyz> (https://github.com/Lazylllama)",
+    "Cyber <code@cyberdev.tech> (https://github.com/cyberdev-tech)"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.29.4",

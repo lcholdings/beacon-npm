@@ -31,14 +31,17 @@ export interface SocketPlayer {
         name?: string;
         grade?: string | number;
     }
-    position: {
-        x: number;
-        y: number;
-        z: number;
-    };
     vehicle?: {
         model: string;
         plate: string;
+    };
+}
+
+export interface SocketPlayersPositions {
+    [id: string]: {
+        x: number;
+        y: number;
+        z: number;
     };
 }
 
