@@ -1,6 +1,6 @@
 {
     "name": "@beacon-oss/types",
-    "version": "0.1.0-alpha.25",
+    "version": "0.1.0-alpha.26",
     "description": "Typings for Beacon FiveM.",
     "keywords": [
         "beacon",
@@ -28,7 +28,7 @@
         "build:declarations": "tsc -p tsconfig.declarations.json",
         "clean": "rimraf ./dist",
         "release": "changeset publish && git push --follow-tags",
-        "publish:local": "bunx yalc push --replace  --sig"
+        "publish:local": "pnpx yalc push --replace  --sig"
     },
     "dependencies": {
         "csstype": "3.1.3"
